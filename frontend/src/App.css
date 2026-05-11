@@ -1,0 +1,228 @@
+/* GD Goenka Signature — QE-inspired redesign */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --navy: #0a1530;
+  --navy-deep: #060d22;
+  --navy-soft: #142147;
+  --gold: #b89456;
+  --gold-light: #d4b27a;
+  --gold-soft: #e8d5a8;
+  --cream: #f6f1e7;
+  --ink: #14182b;
+  --muted: #6b6f80;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--ink);
+  background: #fff;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+.serif {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.serif-italic {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.gold-text { color: var(--gold); }
+.gold-text-light { color: var(--gold-light); }
+
+/* gold divider */
+.gold-divider {
+  display: inline-block;
+  width: 120px;
+  height: 1px;
+  background: var(--gold);
+  margin: 1.25rem auto;
+}
+.gold-divider-thin {
+  display: inline-block;
+  width: 64px;
+  height: 1px;
+  background: var(--gold);
+}
+
+/* outlined gold button */
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 2.25rem;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  background: transparent;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.125rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 220ms ease, color 220ms ease;
+}
+.btn-gold:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+.btn-gold-dark {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+.btn-gold-dark:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+/* tiny enquire pill */
+.enquire-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 1.1rem;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 220ms ease, color 220ms ease;
+}
+.enquire-pill:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+/* hero overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at center, rgba(10,21,48,0.35) 0%, rgba(6,13,34,0.85) 80%),
+    linear-gradient(to bottom, rgba(6,13,34,0.6), rgba(6,13,34,0.85));
+}
+
+/* heading large */
+.h-display {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.005em;
+}
+.h-display-italic {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 1.02;
+}
+
+/* section heading */
+.h-section {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
+  line-height: 1.1;
+}
+
+/* small caps label */
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ornament mandala */
+.mandala-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'><g fill='none' stroke='%23142147' stroke-width='1' opacity='0.55'><circle cx='300' cy='300' r='120'/><circle cx='300' cy='300' r='170'/><circle cx='300' cy='300' r='220'/><circle cx='300' cy='300' r='270'/><g><path d='M300 80 L320 300 L300 520 L280 300 Z'/><path d='M80 300 L300 320 L520 300 L300 280 Z'/><path d='M150 150 L300 290 L450 450 L310 310 Z'/><path d='M450 150 L310 290 L150 450 L290 310 Z'/></g></g></svg>");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+/* fancy underline link */
+.fancy-link {
+  position: relative;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--gold);
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.fancy-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background: var(--gold);
+  transform: scaleX(0.3);
+  transform-origin: left;
+  transition: transform 320ms ease;
+}
+.fancy-link:hover::after { transform: scaleX(1); }
+
+/* slide animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 900ms ease both; }
+
+/* horizontal scroll snap for events */
+.snap-x-scroll { scroll-snap-type: x mandatory; }
+.snap-x-scroll > * { scroll-snap-align: start; }
+
+/* shadcn nav menu fix on dark bg */
+.nav-dark [data-radix-popper-content-wrapper] { z-index: 60; }
+
+/* responsive helpers */
+@media (max-width: 768px) {
+  .h-display, .h-display-italic { font-size: clamp(2.5rem, 9vw, 4rem); }
+}
+
+/* card on dark */
+.dark-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(184,148,86,0.18);
+  transition: border-color 320ms ease, background-color 320ms ease;
+}
+.dark-card:hover {
+  border-color: rgba(184,148,86,0.6);
+  background: rgba(184,148,86,0.04);
+}
+
+/* number stat */
+.stat-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--gold);
+  line-height: 1;
+}
+
+/* dropdown menu portrait */
+.menu-panel {
+  background: var(--navy-deep);
+  color: #fff;
+}
+
+/* hide scrollbars where requested */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
