@@ -1,5 +1,5 @@
-import { Crown, Mail, Phone, MapPin, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
-import { contactInfo, navLinks } from "../mock";
+import { Mail, Phone, MapPin, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
+import { contactInfo, navLinks, LOGO_URL } from "../mock";
 
 export default function Footer({ onEnquire }) {
   return (
@@ -8,8 +8,7 @@ export default function Footer({ onEnquire }) {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-5">
             <div className="flex flex-col items-start">
-              <Crown size={32} className="text-[var(--gold)] mb-3" strokeWidth={1.2} />
-              <div className="serif text-white text-[26px] leading-none">GD Goenka Signature</div>
+              <img src={LOGO_URL} alt="GD Goenka Signature" className="h-16 w-auto mb-3" />
               <div className="text-[11px] tracking-[0.4em] text-[var(--gold-light)] mt-1">GURUGRAM · INDIA</div>
             </div>
             <p className="serif-italic text-white/70 text-[18px] mt-6 max-w-[420px] leading-[1.6]">

@@ -9,6 +9,7 @@ import Pillars from "./components/Pillars";
 import Infrastructure from "./components/Infrastructure";
 import Admissions from "./components/Admissions";
 import EventsSection from "./components/EventsSection";
+import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
 import EnquiryDialog from "./components/EnquiryDialog";
 import TopBar from "./components/TopBar";
@@ -30,6 +31,7 @@ const Home = () => {
         <Infrastructure />
         <Admissions onEnquire={openEnquire} />
         <EventsSection />
+        <Gallery />
       </main>
       <Footer onEnquire={openEnquire} />
       <EnquiryDialog open={enquireOpen} onOpenChange={setEnquireOpen} />

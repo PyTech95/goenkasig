@@ -5,7 +5,7 @@ import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { toast } from "sonner";
-import { Crown } from "lucide-react";
+import { LOGO_URL } from "../mock";
 
 export default function EnquiryDialog({ open, onOpenChange }) {
   const [form, setForm] = useState({ name: "", email: "", phone: "", grade: "", message: "" });
@@ -32,7 +32,7 @@ export default function EnquiryDialog({ open, onOpenChange }) {
       <DialogContent className="max-w-[560px] p-0 border-0 overflow-hidden" style={{ background: "var(--navy-deep)", color: "#fff" }}>
         <div className="p-8 md:p-10">
           <DialogHeader className="items-center text-center">
-            <Crown size={28} className="text-[var(--gold)] mb-2" strokeWidth={1.2} />
+            <img src={LOGO_URL} alt="GD Goenka Signature" className="h-12 w-auto mb-2" />
             <DialogTitle className="serif text-white text-[28px] md:text-[34px] leading-tight">
               Begin your <span className="serif-italic gold-text">enquiry.</span>
             </DialogTitle>

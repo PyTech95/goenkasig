@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { ChevronLeft, ChevronRight, Calendar } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { events } from "../mock";
 
 export default function EventsSection() {
@@ -12,7 +12,7 @@ export default function EventsSection() {
   };
 
   return (
-    <section id="gallery" className="relative py-24 md:py-32 bg-[var(--cream)]">
+    <section id="events" className="relative py-24 md:py-32 bg-[var(--cream)]">
       <div className="max-w-[1300px] mx-auto px-6 md:px-10">
         <div className="flex items-end justify-between mb-12 flex-wrap gap-6">
           <div>
@@ -34,18 +34,18 @@ export default function EventsSection() {
 
         <div ref={trackRef} className="flex gap-6 overflow-x-auto snap-x-scroll no-scrollbar pb-2 pr-2">
           {events.map((e) => (
-            <article key={e.id} className="shrink-0 w-[280px] md:w-[340px] bg-white border border-[rgba(184,148,86,0.25)] hover:border-[var(--gold)] transition-colors group">
-              <div className="relative aspect-[4/5] overflow-hidden" style={{ background: "var(--navy)" }}>
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-                  <Calendar size={28} className="text-[var(--gold)] mb-3" strokeWidth={1.2} />
-                  <div className="serif text-[var(--gold-light)] text-[14px] tracking-[0.3em] uppercase">{e.date}</div>
-                  <span className="gold-divider-thin my-4" />
-                  <h3 className="serif-italic text-white text-[34px] md:text-[42px] leading-tight">{e.title}</h3>
+            <article key={e.id} className="shrink-0 w-[300px] md:w-[360px] bg-white border border-[rgba(184,148,86,0.2)] hover:border-[var(--gold)] transition-colors group">
+              <div className="relative aspect-[4/5] overflow-hidden bg-[var(--navy)]">
+                <img src={e.image} alt={e.title} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-[1200ms]" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[rgba(6,13,34,0.85)] via-[rgba(6,13,34,0.15)] to-transparent" />
+                <div className="absolute bottom-5 left-5 right-5">
+                  <div className="text-[var(--gold-light)] text-[11px] tracking-[0.3em] uppercase">{e.date}</div>
+                  <h3 className="serif text-white text-[28px] leading-tight mt-1">{e.title}</h3>
                 </div>
               </div>
               <div className="p-6">
                 <p className="text-[14.5px] leading-[1.75] text-[var(--ink)]/75 mb-4">{e.body}</p>
-                <span className="fancy-link">Read more</span>
+                <span className="fancy-link">Know more</span>
               </div>
             </article>
           ))}

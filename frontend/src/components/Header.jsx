@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Menu, X, ChevronDown, Crown } from "lucide-react";
-import { navLinks } from "../mock";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { navLinks, LOGO_URL } from "../mock";
 
 export default function Header({ onEnquire }) {
   const [scrolled, setScrolled] = useState(false);
@@ -23,11 +23,10 @@ export default function Header({ onEnquire }) {
           {/* left: enquire */}
           <button onClick={onEnquire} className="enquire-pill" aria-label="Enquire now">Enquire</button>
 
-          {/* center: crest */}
+          {/* center: logo */}
           <a href="#home" className="flex flex-col items-center group">
-            <Crown size={28} className="text-[var(--gold)] mb-1 transition-transform duration-500 group-hover:scale-110" strokeWidth={1.2} />
-            <div className="serif text-white text-[18px] md:text-[22px] leading-none">GD Goenka Signature</div>
-            <div className="text-[10px] md:text-[11px] tracking-[0.4em] text-[var(--gold-light)] mt-1">GURUGRAM · INDIA</div>
+            <img src={LOGO_URL} alt="GD Goenka Signature" className="h-14 md:h-16 w-auto transition-transform duration-500 group-hover:scale-105" style={{ filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.35))" }} />
+            <div className="text-[10px] md:text-[11px] tracking-[0.4em] text-[var(--gold-light)] mt-2">GURUGRAM · INDIA</div>
           </a>
 
           {/* right: menu */}
@@ -45,9 +44,8 @@ export default function Header({ onEnquire }) {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-5 flex items-center justify-between">
           <button onClick={() => { setMobileOpen(false); onEnquire(); }} className="enquire-pill">Enquire</button>
           <div className="flex flex-col items-center">
-            <Crown size={26} className="text-[var(--gold)] mb-1" strokeWidth={1.2} />
-            <div className="serif text-white text-[20px] leading-none">GD Goenka Signature</div>
-            <div className="text-[10px] tracking-[0.4em] text-[var(--gold-light)] mt-1">GURUGRAM · INDIA</div>
+            <img src={LOGO_URL} alt="GD Goenka Signature" className="h-14 w-auto" />
+            <div className="text-[10px] tracking-[0.4em] text-[var(--gold-light)] mt-2">GURUGRAM · INDIA</div>
           </div>
           <button onClick={() => setMobileOpen(false)} className="text-[var(--gold)] hover:text-white transition-colors" aria-label="Close menu">
             <X size={28} strokeWidth={1.4} />
