@@ -19,7 +19,7 @@ export default function About() {
           ))}
         </div>
         <div className="md:col-span-6 order-1 md:order-2">
-          <div className="relative aspect-[5/6] overflow-hidden">
+          <div className="relative aspect-[4/5] md:aspect-square overflow-hidden">
             <img src={aboutCopy.image} alt="GD Goenka Signature campus" className="w-full h-full object-cover" />
             <div className="absolute inset-0 ring-1 ring-[rgba(184,148,86,0.25)]" />
             <div className="absolute -bottom-5 -left-5 w-28 h-28 border-l-2 border-b-2 border-[var(--gold)]" />
