@@ -13,6 +13,8 @@ import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
 import EnquiryDialog from "./components/EnquiryDialog";
 import TopBar from "./components/TopBar";
+import WhatsAppButton from "./components/WhatsAppButton";
+import AIAssistant from "./components/AIAssistant";
 import { Toaster } from "./components/ui/sonner";
 
 const Home = () => {
@@ -34,6 +36,8 @@ const Home = () => {
         <Gallery />
       </main>
       <Footer onEnquire={openEnquire} />
+      <WhatsAppButton />
+      <AIAssistant />
       <EnquiryDialog open={enquireOpen} onOpenChange={setEnquireOpen} />
       <Toaster position="top-center" />
     </div>

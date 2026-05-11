@@ -17,7 +17,7 @@ export default function Hero({ onEnquire }) {
           key={s.id}
           className={`absolute inset-0 transition-opacity duration-[1400ms] ease-in-out ${i === active ? 'opacity-100' : 'opacity-0'}`}
         >
-          <img src={s.image} alt={s.headline} className="w-full h-full object-cover" style={{ transform: 'scale(1.05)' }} />
+          <img src={s.image} alt={s.headline} className={`w-full h-full object-cover ${i === active ? 'kenburns' : ''}`} style={{ transform: 'scale(1.05)' }} />
           <div className="hero-overlay" />
         </div>
       ))}
