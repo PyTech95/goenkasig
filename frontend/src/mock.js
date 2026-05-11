@@ -40,10 +40,10 @@ export const heroSlides = [
   },
   {
     id: 2,
-    accent: 'Building the',
-    headline: 'Leaders of Tomorrow',
-    tagline: 'A premium CBSE school on a 20\u2011acre signature campus, Sohna Road',
-    image: `${ORIG}/home-banner2.webp`,
+    accent: 'Champions of',
+    headline: 'Tomorrow',
+    tagline: 'World-class sports, equestrian and a 60,000 sq.ft. indoor complex',
+    image: 'https://customer-assets.emergentagent.com/job_goenkasig-new/artifacts/xx738jfn_915ea07d-cf68-44b2-96c4-a1624a767da6.png',
   },
   {
     id: 3,
@@ -54,10 +54,17 @@ export const heroSlides = [
   },
   {
     id: 4,
-    accent: 'Preparing your child for the',
-    headline: 'Real World',
-    tagline: 'Senior secondary, middle, junior and Montessori early years',
-    image: `${ORIG}/home-banner.webp`,
+    accent: 'A home that',
+    headline: 'Grows Leaders',
+    tagline: 'Residential life designed to nurture independent, principled young adults',
+    image: 'https://customer-assets.emergentagent.com/job_goenkasig-new/artifacts/w1boi2kx_707f856d-9d40-4c45-b02b-81d9c0d56e76.png',
+  },
+  {
+    id: 5,
+    accent: 'Where',
+    headline: 'Character is Built',
+    tagline: 'Kindness, courage and curiosity \u2014 the values that stay for life',
+    image: 'https://customer-assets.emergentagent.com/job_goenkasig-new/artifacts/bg5ngyqd_74a930fb-8345-4876-93a8-416b29a9389a.png',
   },
 ];
 

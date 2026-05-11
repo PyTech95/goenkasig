@@ -22,7 +22,7 @@ export default function Hero({ onEnquire }) {
         </div>
       ))}
 
-      <div className="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center" style={{ textShadow: "0 2px 24px rgba(0,0,0,0.45)" }}>
         <div className="flex flex-col items-center max-w-[1100px]">
           <div className="eyebrow text-[var(--gold-light)] mb-6 fade-up">A Premium CBSE Boarding School</div>
           <h1 className="text-white fade-up" key={active}>
