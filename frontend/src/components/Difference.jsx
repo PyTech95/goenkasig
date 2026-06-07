@@ -3,11 +3,11 @@ import Reveal from "./Reveal";
 
 export default function Difference() {
   return (
-    <section className="relative py-20 md:py-32 overflow-hidden" style={{ background: "var(--navy)" }}>
+    <section className="relative py-12 md:py-20 overflow-hidden" style={{ background: "var(--navy)" }}>
       <div className="mandala-bg" />
       <div className="relative max-w-[1200px] mx-auto px-5 md:px-10">
         <Reveal>
-          <div className="flex flex-col items-center text-center mb-12 md:mb-16">
+          <div className="flex flex-col items-center text-center mb-10 md:mb-12">
             <div className="eyebrow mb-5">The Signature Difference</div>
             <h2 className="h-section text-white">
               A school where students are

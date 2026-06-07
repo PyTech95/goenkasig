@@ -8,10 +8,10 @@ export default function Infrastructure() {
   const current = infrastructureTabs.find((t) => t.id === active);
 
   return (
-    <section id="campus" className="relative py-20 md:py-32 overflow-hidden" style={{ background: "var(--navy-deep)" }}>
+    <section id="campus" className="relative py-12 md:py-20 overflow-hidden" style={{ background: "var(--navy-deep)" }}>
       <div className="max-w-[1300px] mx-auto px-5 md:px-10">
         <Reveal>
-          <div className="text-center max-w-[760px] mx-auto mb-10 md:mb-16">
+          <div className="text-center max-w-[760px] mx-auto mb-8 md:mb-12">
             <div className="eyebrow mb-5">Infrastructure & Resources</div>
             <h2 className="h-section text-white">
               A campus designed to

@@ -11,14 +11,14 @@ export default function Boarding({ onEnquire }) {
   const featureIcons = [Moon, ShieldCheck, Heart, ShieldCheck, Utensils, Heart];
 
   return (
-    <section id="boarding" className="relative py-20 md:py-32 overflow-hidden" style={{ background: "var(--navy-deep)" }}>
+    <section id="boarding" className="relative py-12 md:py-20 overflow-hidden" style={{ background: "var(--navy-deep)" }}>
       {/* soft mandala behind */}
       <div className="mandala-bg" style={{ opacity: 0.35 }} />
 
       <div className="relative max-w-[1300px] mx-auto px-5 md:px-10">
         {/* Heading */}
         <Reveal>
-          <div className="text-center max-w-[780px] mx-auto mb-14 md:mb-20">
+          <div className="text-center max-w-[780px] mx-auto mb-10 md:mb-14">
             <div className="eyebrow mb-5">{boardingHome.eyebrow}</div>
             <h2 className="h-section text-white">
               {boardingHome.heading}
@@ -98,7 +98,7 @@ export default function Boarding({ onEnquire }) {
         </div>
 
         {/* Features grid */}
-        <div className="mt-16 md:mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5">
+        <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5">
           {boardingHome.features.map((f, i) => {
             const Icon = featureIcons[i] || Check;
             return (
@@ -113,7 +113,7 @@ export default function Boarding({ onEnquire }) {
         </div>
 
         {/* Stats */}
-        <div className="mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6">
+        <div className="mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6">
           {boardingHome.stats.map((s, i) => (
             <Reveal key={s.label} delay={i * 100}>
               <div className="flex flex-col items-center text-center">
@@ -127,7 +127,7 @@ export default function Boarding({ onEnquire }) {
 
         {/* CTA */}
         <Reveal>
-          <div className="mt-16 md:mt-20 text-center">
+          <div className="mt-12 md:mt-16 text-center">
             <button onClick={onEnquire} className="btn-gold" style={{ background: "var(--gold)", color: "var(--navy-deep)" }}>
               Enquire about Boarding
             </button>

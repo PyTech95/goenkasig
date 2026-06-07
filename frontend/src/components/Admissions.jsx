@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 
 export default function Admissions({ onEnquire }) {
   return (
-    <section id="admissions" className="relative bg-white py-20 md:py-32">
+    <section id="admissions" className="relative bg-white py-12 md:py-20">
       <div className="max-w-[1200px] mx-auto px-5 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
           <Reveal variant="left" className="md:col-span-7">

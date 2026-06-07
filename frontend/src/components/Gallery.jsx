@@ -3,10 +3,10 @@ import Reveal from "./Reveal";
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="relative py-20 md:py-32 bg-white">
+    <section id="gallery" className="relative py-12 md:py-20 bg-white">
       <div className="max-w-[1400px] mx-auto px-5 md:px-10">
         <Reveal>
-          <div className="text-center max-w-[760px] mx-auto mb-10 md:mb-16">
+          <div className="text-center max-w-[760px] mx-auto mb-8 md:mb-12">
             <div className="eyebrow mb-5">GDGSS at Glance</div>
             <h2 className="h-section text-[var(--ink)]">
               Glimpses of life on

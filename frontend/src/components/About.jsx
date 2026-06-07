@@ -5,7 +5,7 @@ import CountUp from "./CountUp";
 
 export default function About() {
   return (
-    <section id="about" className="relative bg-white py-20 md:py-32 overflow-hidden">
+    <section id="about" className="relative bg-white py-12 md:py-20 overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 items-center">
         <Reveal variant="left" className="md:col-span-6 order-2 md:order-1">
           <div className="eyebrow mb-5">{aboutCopy.eyebrow}</div>
@@ -31,7 +31,7 @@ export default function About() {
       </div>
 
       {/* stats strip */}
-      <div className="max-w-[1200px] mx-auto px-5 md:px-10 mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6">
+      <div className="max-w-[1200px] mx-auto px-5 md:px-10 mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6">
         {stats.map((s, i) => (
           <Reveal key={s.label} delay={i * 100}>
             <div className="flex flex-col items-center text-center">
@@ -44,7 +44,7 @@ export default function About() {
       </div>
 
       {/* Why Us */}
-      <div className="max-w-[1200px] mx-auto px-5 md:px-10 mt-20 md:mt-28">
+      <div className="max-w-[1200px] mx-auto px-5 md:px-10 mt-14 md:mt-20">
         <Reveal>
           <div className="text-center mb-10 md:mb-12">
             <div className="eyebrow mb-5">Why GD Goenka Signature</div>

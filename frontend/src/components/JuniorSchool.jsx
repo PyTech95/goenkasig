@@ -20,7 +20,7 @@ export default function JuniorSchool() {
   };
 
   return (
-    <section id="junior" className="relative bg-white py-20 md:py-32 overflow-hidden">
+    <section id="junior" className="relative bg-white py-12 md:py-20 overflow-hidden">
       <div className="max-w-[1300px] mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 items-center">
         {/* Left text */}
         <Reveal variant="left" className="md:col-span-5 order-2 md:order-1">

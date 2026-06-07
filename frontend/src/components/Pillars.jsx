@@ -4,10 +4,10 @@ import Reveal from "./Reveal";
 
 export default function Pillars() {
   return (
-    <section id="academics" className="bg-[var(--cream)] py-20 md:py-32">
+    <section id="academics" className="bg-[var(--cream)] py-12 md:py-20">
       <div className="max-w-[1200px] mx-auto px-5 md:px-10">
         <Reveal>
-          <div className="max-w-[760px] mb-12 md:mb-16">
+          <div className="max-w-[760px] mb-10 md:mb-12">
             <div className="eyebrow mb-5">Beyond the Classroom</div>
             <h2 className="h-section text-[var(--ink)]">
               A holistic life,

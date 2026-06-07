@@ -13,7 +13,7 @@ export default function EventsSection() {
   };
 
   return (
-    <section id="events" className="relative py-20 md:py-32 bg-[var(--cream)]">
+    <section id="events" className="relative py-12 md:py-20 bg-[var(--cream)]">
       <div className="max-w-[1300px] mx-auto px-5 md:px-10">
         <Reveal>
           <div className="flex items-end justify-between mb-10 md:mb-12 flex-wrap gap-6">
