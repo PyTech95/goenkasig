@@ -32,7 +32,9 @@ export default function EnquiryDialog({ open, onOpenChange }) {
       <DialogContent className="max-w-[560px] p-0 border-0 overflow-hidden" style={{ background: "var(--navy-deep)", color: "#fff" }}>
         <div className="p-8 md:p-10">
           <DialogHeader className="items-center text-center">
-            <img src={LOGO_URL} alt="GD Goenka Signature" className="h-12 w-auto mb-2" style={{ filter: "brightness(0) invert(1)" }} />
+            <span className="bg-white rounded-lg px-3 py-1.5 shadow-md inline-block mb-2">
+              <img src={LOGO_URL} alt="GD Goenka Signature" className="h-9 w-auto" />
+            </span>
             <DialogTitle className="serif text-white text-[28px] md:text-[34px] leading-tight">
               Begin your <span className="serif-italic gold-text">enquiry.</span>
             </DialogTitle>

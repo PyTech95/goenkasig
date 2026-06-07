@@ -103,8 +103,8 @@ export default function AIAssistant() {
       <div className="rounded-2xl overflow-hidden shadow-2xl border border-[rgba(184,148,86,0.4)]" style={{ background: "var(--navy-deep)" }}>
         {/* Header */}
         <div className="flex items-center gap-3 px-4 py-3.5" style={{ background: "var(--navy)" }}>
-          <div className="w-10 h-10 rounded-full flex items-center justify-center shrink-0" style={{ background: "rgba(184,148,86,0.15)", border: "1px solid rgba(184,148,86,0.5)" }}>
-            <img src={LOGO_URL} alt="" className="w-7 h-7 object-contain" style={{ filter: "brightness(0) invert(1)" }} />
+          <div className="w-10 h-10 rounded-full flex items-center justify-center shrink-0 bg-white" style={{ border: "1px solid rgba(184,148,86,0.5)" }}>
+            <img src={LOGO_URL} alt="" className="w-7 h-7 object-contain" />
           </div>
           <div className="flex-1 min-w-0">
             <div className="serif text-white text-[17px] leading-tight flex items-center gap-1.5">
