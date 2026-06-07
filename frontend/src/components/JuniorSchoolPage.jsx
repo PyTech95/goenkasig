@@ -91,7 +91,7 @@ export default function JuniorSchoolPage() {
               return (
                 <article key={r.id} className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
                   <Reveal variant={reverse ? "right" : "left"} className={`md:col-span-7 ${reverse ? "md:order-2" : ""}`}>
-                    <div className="relative aspect-[4/3] overflow-hidden group">
+                    <div className="relative aspect-video overflow-hidden group">
                       <img src={r.image} alt={r.title} loading="lazy" className="w-full h-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-105" />
                       <div className="absolute inset-0 ring-1 ring-[rgba(184,148,86,0.25)]" />
                       <div className="absolute -top-3 -left-3 w-16 h-16 border-l-2 border-t-2 border-[var(--gold)]" />

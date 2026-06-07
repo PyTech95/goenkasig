@@ -49,7 +49,7 @@ export default function JuniorSchool() {
         {/* Right carousel */}
         <Reveal variant="right" delay={100} className="md:col-span-7 order-1 md:order-2">
           <div className="relative">
-            <div className="relative aspect-[4/3] md:aspect-[5/4] overflow-hidden bg-[var(--navy-deep)]">
+            <div className="relative aspect-video overflow-hidden bg-[var(--navy-deep)]">
               {slides.map((s, i) => (
                 <img
                   key={i}
