@@ -46,13 +46,6 @@ export const heroSlides = [
     image: 'https://customer-assets.emergentagent.com/job_goenkasig-new/artifacts/xx738jfn_915ea07d-cf68-44b2-96c4-a1624a767da6.png',
   },
   {
-    id: 3,
-    accent: 'Building',
-    headline: 'Geniuses of Tomorrow',
-    tagline: 'Where the Real World Curriculum\u2122 meets world\u2011class infrastructure',
-    image: `${ORIG}/bg_1-min.jpg`,
-  },
-  {
     id: 4,
     accent: 'A home that',
     headline: 'Grows Leaders',
