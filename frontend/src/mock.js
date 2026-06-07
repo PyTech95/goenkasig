@@ -1,6 +1,6 @@
 // Mock data — sourced from gdgoenkasignature.com (original images & text)
 
-export const LOGO_URL = 'https://customer-assets.emergentagent.com/job_goenkasig-new/artifacts/treamasa_image.png';
+export const LOGO_URL = '/logo-gdgss.png?v=2';
 export const ORIG = 'https://www.gdgoenkasignature.com/images';
 
 export const navLinks = [

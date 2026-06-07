@@ -25,8 +25,7 @@ export default function Header({ onEnquire }) {
 
           {/* center: logo */}
           <a href="#home" className="flex flex-col items-center group">
-            <img src={LOGO_URL} alt="GD Goenka Signature" className="h-14 md:h-16 w-auto transition-transform duration-500 group-hover:scale-105" style={{ filter: "brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0,0,0,0.35))" }} />
-            <div className="text-[10px] md:text-[11px] tracking-[0.4em] text-[var(--gold-light)] mt-2">GURUGRAM · INDIA</div>
+            <img src={LOGO_URL} alt="GD Goenka Signature" className="h-12 md:h-16 w-auto transition-transform duration-500 group-hover:scale-105" style={{ filter: "brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0,0,0,0.35))" }} />
           </a>
 
           {/* right: menu */}
@@ -44,8 +43,7 @@ export default function Header({ onEnquire }) {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-5 flex items-center justify-between">
           <button onClick={() => { setMobileOpen(false); onEnquire(); }} className="enquire-pill">Enquire</button>
           <div className="flex flex-col items-center">
-            <img src={LOGO_URL} alt="GD Goenka Signature" className="h-14 w-auto" style={{ filter: "brightness(0) invert(1)" }} />
-            <div className="text-[10px] tracking-[0.4em] text-[var(--gold-light)] mt-2">GURUGRAM · INDIA</div>
+            <img src={LOGO_URL} alt="GD Goenka Signature" className="h-12 w-auto" style={{ filter: "brightness(0) invert(1)" }} />
           </div>
           <button onClick={() => setMobileOpen(false)} className="text-[var(--gold)] hover:text-white transition-colors" aria-label="Close menu">
             <X size={28} strokeWidth={1.4} />
