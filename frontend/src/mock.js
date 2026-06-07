@@ -241,3 +241,77 @@ export const aboutCopy = {
   ],
   image: 'https://customer-assets.emergentagent.com/job_goenkasig-new/artifacts/s89pp00g_5142778f-491f-493d-8add-7423cd54c7f6.png',
 };
+
+// ---- Junior School ----
+export const juniorSchoolHome = {
+  eyebrow: 'Junior School',
+  heading: 'Where young minds',
+  italic: 'grow with confidence',
+  body: 'A nurturing and inspiring learning environment where young minds grow with confidence, creativity, and curiosity. From Pre-Nursery to Class 2, we focus on building a strong academic and emotional foundation through joyful and meaningful learning experiences.',
+  meta: 'Designed by Education Design International \u2014 a leading American school-design practice.',
+  carousel: [
+    { src: '/junior/clean/p20.jpg', label: 'Learning Studio \u2014 Nursery' },
+    { src: '/junior/clean/p22.jpg', label: 'Learning Commons \u2014 Nursery' },
+    { src: '/junior/clean/p24.jpg', label: 'Story-telling Area' },
+    { src: '/junior/clean/p18.jpg', label: 'Amphitheatre' },
+    { src: '/junior/clean/p14.jpg', label: 'Discovery Zone' },
+    { src: '/junior/clean/p16.jpg', label: 'Lego Lab & Commons' },
+  ],
+};
+
+export const juniorRooms = [
+  {
+    id: 'studio',
+    title: 'Learning Studio',
+    sub: 'Nursery',
+    image: '/junior/clean/p20.jpg',
+    detail: '/junior/clean/p21.jpg',
+    pillars: ['Display wall', 'Teacher\u2019s wall with storage, digital display & writable board', 'Trough sink and reading nook', 'Perforated gypsum ceiling', 'Soft vinyl flooring'],
+    body: 'A bright, child-scaled studio designed for focused early-years learning. A teacher\u2019s wall integrates storage, a writable board, digital display and a trough sink \u2014 so play, art and discovery flow without interruption.',
+  },
+  {
+    id: 'commons',
+    title: 'Learning Commons',
+    sub: 'Nursery',
+    image: '/junior/clean/p22.jpg',
+    detail: '/junior/clean/p23.jpg',
+    pillars: ['Writing wall for children', 'Art-gallery wall for student work', 'Wooden baffle ceiling', 'Soft acoustic boards', 'Perforated gypsum ceiling'],
+    body: 'A shared community space at the heart of the Nursery cluster \u2014 part classroom, part gallery, part reading den. A blackboard wall invites doodles; an art wall celebrates every small triumph.',
+  },
+  {
+    id: 'story',
+    title: 'Story-Telling Area',
+    sub: 'Second Floor',
+    image: '/junior/clean/p24.jpg',
+    detail: '/junior/clean/p25.jpg',
+    pillars: ['CNC-cut acoustic panelling', 'Bamboo pendant lighting', 'Soft carpet flooring', 'Textured paint walls', 'Tiered seating with ottomans'],
+    body: 'A double-height circular space where stories become memories. Warm bamboo pendants, CNC-cut ceiling baffles and a soft circular stage invite children to gather, listen and imagine.',
+  },
+  {
+    id: 'amphi',
+    title: 'Amphitheatre',
+    sub: 'Drama & Theatrics',
+    image: '/junior/clean/p18.jpg',
+    detail: '/junior/clean/p19.jpg',
+    pillars: ['Wooden coffered beam ceiling', 'Acoustic ceiling panels', 'Printed soft-board acoustic walls', 'Wide stepped wooden seating', 'Performance-grade lighting'],
+    body: 'A purpose-built amphitheatre for drama, music and assemblies. Wooden coffered beams overhead, acoustic walls, and broad stepped seating turn every gathering into a stage moment.',
+  },
+  {
+    id: 'discovery',
+    title: 'Discovery Zone',
+    sub: 'Ground Floor',
+    image: '/junior/clean/p14.jpg',
+    detail: '/junior/clean/p15.jpg',
+    pillars: ['Wooden paneling and finishes', 'Bamboo / cane pendant lights', 'Wooden baffle ceiling', 'Texture-painted gypsum ceiling', 'Vinyl flooring with soft seating'],
+    body: 'A welcoming arrival lounge that doubles as an inquiry hub. Natural wood, bamboo lights and cosy nooks invite children to explore, ask and wonder.',
+  },
+  {
+    id: 'lego',
+    title: 'Lego Lab & Commons',
+    sub: 'Lower Ground Floor',
+    image: '/junior/clean/p16.jpg',
+    detail: '/junior/clean/p17.jpg',
+    pillars: ['Wooden baffle ceiling', 'Acoustic soft-boards', 'Wall activity stations', 'Perforated gypsum ceiling', 'Easy-clean vinyl flooring'],
+    body: 'A maker-friendly lab where every child becomes an engineer. Floor-to-ceiling activity walls, soft acoustic boards and abundant table space make building, breaking and rebuilding a daily joy.',
+  },
+];

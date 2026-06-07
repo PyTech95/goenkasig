@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import JuniorSchool from "./components/JuniorSchool";
 import Difference from "./components/Difference";
 import Pillars from "./components/Pillars";
 import Infrastructure from "./components/Infrastructure";
@@ -17,6 +18,8 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import AIAssistant from "./components/AIAssistant";
 import { Toaster } from "./components/ui/sonner";
 
+import JuniorSchoolPage from "./components/JuniorSchoolPage";
+
 const Home = () => {
   const [enquireOpen, setEnquireOpen] = useState(false);
   const openEnquire = () => setEnquireOpen(true);
@@ -28,6 +31,7 @@ const Home = () => {
       <main>
         <Hero onEnquire={openEnquire} />
         <About />
+        <JuniorSchool />
         <Difference />
         <Pillars />
         <Infrastructure />
@@ -50,6 +54,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/junior-school" element={<JuniorSchoolPage />} />
         </Routes>
       </BrowserRouter>
     </div>
