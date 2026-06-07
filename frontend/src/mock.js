@@ -36,7 +36,7 @@ export const heroSlides = [
     accent: 'A',
     headline: 'River of Knowledge',
     tagline: 'Day, Weekly & Full Boarding \u2014 Gurgaon',
-    image: `${ORIG}/home-banner1a.webp`,
+    image: 'https://customer-assets.emergentagent.com/job_goenkasig-new/artifacts/awv4lcd0_455.jpg',
   },
   {
     id: 2,
