@@ -53,7 +53,7 @@ export default function Header({ onEnquire }) {
             <img
               src={LOGO_URL}
               alt="GD Goenka Signature"
-              className="h-9 sm:h-11 md:h-14 lg:h-16 w-auto max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
+              className="h-[64px] sm:h-12 md:h-14 lg:h-16 w-auto max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
             />
           </a>
 
@@ -82,7 +82,7 @@ export default function Header({ onEnquire }) {
             Enquire
           </button>
           <div className="flex items-center justify-center min-w-0 flex-1 sm:flex-initial mx-2">
-            <img src={LOGO_URL} alt="GD Goenka Signature" className="h-9 sm:h-11 md:h-14 w-auto max-w-full object-contain" />
+            <img src={LOGO_URL} alt="GD Goenka Signature" className="h-[64px] sm:h-12 md:h-14 w-auto max-w-full object-contain" />
           </div>
           <button onClick={() => setMobileOpen(false)} className="text-[var(--gold)] hover:text-white transition-colors shrink-0" aria-label="Close menu">
             <X size={22} className="sm:hidden" strokeWidth={1.4} />
