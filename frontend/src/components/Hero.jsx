@@ -3,7 +3,6 @@ import { Play } from "lucide-react";
 import { heroSlides } from "../mock";
 import VideoModal from "./VideoModal";
 
-// Placeholder video URL — replace with the school's actual video
 const HERO_VIDEO_URL = "https://www.gdgoenkasignature.com/video/gdg-signature.mp4";
 
 export default function Hero() {
@@ -32,48 +31,45 @@ export default function Hero() {
         </div>
       ))}
 
-      {/* Centered animated play button */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center px-6">
-        <button
-          onClick={() => setVideoOpen(true)}
-          aria-label="Play campus film"
-          className="group relative flex items-center justify-center w-24 h-24 md:w-32 md:h-32 rounded-full transition-transform duration-500 hover:scale-110"
-        >
-          {/* Outer pulse rings */}
-          <span className="absolute inset-0 rounded-full border border-[var(--gold)] opacity-60 animate-ping" />
-          <span
-            className="absolute inset-0 rounded-full border border-[var(--gold)] opacity-30 animate-ping"
-            style={{ animationDelay: "0.8s", animationDuration: "2.2s" }}
-          />
-          {/* Inner solid disc */}
-          <span
-            className="relative flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full shadow-2xl transition-all duration-500"
-            style={{ background: "rgba(184,148,86,0.95)", boxShadow: "0 8px 40px rgba(184,148,86,0.45)" }}
-          >
-            <Play size={34} className="text-[var(--navy-deep)] ml-1.5" strokeWidth={1.5} fill="currentColor" />
-          </span>
-          {/* Label */}
-          <span className="absolute -bottom-12 left-1/2 -translate-x-1/2 whitespace-nowrap text-[11px] md:text-[12px] tracking-[0.32em] uppercase text-white/90">
-            Watch the film
-          </span>
-        </button>
-      </div>
-
-      {/* Bottom info bar */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 px-6 md:px-10 pb-8 md:pb-10">
-        <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center md:items-end justify-between gap-5">
+      {/* Bottom info bar with centered play button */}
+      <div className="absolute bottom-0 left-0 right-0 z-10 px-6 md:px-10 pb-10 md:pb-12">
+        <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-3 items-end gap-6">
           {/* Left: school identity */}
-          <div className="text-center md:text-left">
-            <div className="serif text-white text-[20px] md:text-[26px] leading-tight">
+          <div className="text-center md:text-left order-2 md:order-1">
+            <div className="serif text-white text-[18px] md:text-[24px] leading-tight">
               GD Goenka <span className="serif-italic gold-text">Signature</span>
             </div>
-            <div className="text-[10.5px] md:text-[11.5px] tracking-[0.32em] uppercase text-white/75 mt-1">
+            <div className="text-[10px] md:text-[11px] tracking-[0.32em] uppercase text-white/75 mt-1">
               A Premium CBSE Boarding School · Gurugram
             </div>
           </div>
 
+          {/* Center: animated play button */}
+          <div className="flex flex-col items-center order-1 md:order-2">
+            <button
+              onClick={() => setVideoOpen(true)}
+              aria-label="Take a virtual tour"
+              className="group relative flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full transition-transform duration-500 hover:scale-110"
+            >
+              <span className="absolute inset-0 rounded-full border border-[var(--gold)] opacity-70 animate-ping" />
+              <span
+                className="absolute inset-0 rounded-full border border-[var(--gold)] opacity-30 animate-ping"
+                style={{ animationDelay: "0.8s", animationDuration: "2.2s" }}
+              />
+              <span
+                className="relative flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full shadow-2xl transition-all duration-500"
+                style={{ background: "rgba(184,148,86,0.95)", boxShadow: "0 8px 30px rgba(184,148,86,0.45)" }}
+              >
+                <Play size={22} className="text-[var(--navy-deep)] ml-1" strokeWidth={1.5} fill="currentColor" />
+              </span>
+            </button>
+            <span className="mt-3 text-[10px] md:text-[11px] tracking-[0.32em] uppercase text-white/85">
+              Take a Tour
+            </span>
+          </div>
+
           {/* Right: slide indicators */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center justify-center md:justify-end gap-2 order-3">
             {heroSlides.map((_, i) => (
               <button
                 key={i}

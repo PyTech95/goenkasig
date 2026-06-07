@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import JuniorSchool from "./components/JuniorSchool";
+import Boarding from "./components/Boarding";
 import Difference from "./components/Difference";
 import Pillars from "./components/Pillars";
 import Infrastructure from "./components/Infrastructure";
@@ -32,6 +33,7 @@ const Home = () => {
         <Hero onEnquire={openEnquire} />
         <About />
         <JuniorSchool />
+        <Boarding onEnquire={openEnquire} />
         <Difference />
         <Pillars />
         <Infrastructure />

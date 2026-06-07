@@ -315,3 +315,48 @@ export const juniorRooms = [
     body: 'A maker-friendly lab where every child becomes an engineer. Floor-to-ceiling activity walls, soft acoustic boards and abundant table space make building, breaking and rebuilding a daily joy.',
   },
 ];
+
+// ---- Boarding section ----
+export const boardingHome = {
+  eyebrow: 'Day, Weekly & Full Boarding',
+  heading: 'A home that',
+  italic: 'grows leaders.',
+  body: 'Nestled within our sprawling state-of-the-art campus, residential life at GD Goenka Signature is designed to give every student the chance to live independently, build lifelong friendships, and grow into a principled, well-rounded young adult \u2014 in a safe, warm, hygienic environment that feels like a second home.',
+  options: [
+    {
+      key: 'day',
+      title: 'Day Boarding',
+      sub: '7:30 am \u2014 6:30 pm',
+      desc: 'Extended hours with prep time, evening sport, hobby clubs and a wholesome dinner before the school bus drops your child home.',
+      image: `${ORIG}/boarding02.webp`,
+    },
+    {
+      key: 'weekly',
+      title: 'Weekly Boarding',
+      sub: 'Mon \u2014 Fri',
+      desc: 'Children stay on campus through the week and head home for weekends \u2014 the ideal balance of independence and family time.',
+      image: `${ORIG}/boarding03.webp`,
+    },
+    {
+      key: 'full',
+      title: 'Full Boarding',
+      sub: 'A complete residential experience',
+      desc: 'A full residential community with house parents, weekend excursions, traditions and lifelong friendships forged across years.',
+      image: `${ORIG}/banner-boarding1.webp`,
+    },
+  ],
+  features: [
+    'Spacious twin & quad-share rooms with en-suite bathrooms',
+    'Dedicated house parents and 24×7 pastoral care',
+    'On-campus medical centre with resident nurse',
+    'CCTV-monitored, secure perimeter and entry',
+    'Multi-cuisine dining hall with nutritionist menus',
+    'Evening prep, sport, hobby clubs and weekend trips',
+  ],
+  stats: [
+    { value: '24\u00d77', label: 'Pastoral Care' },
+    { value: '1:8', label: 'House-Parent Ratio' },
+    { value: '20', label: 'Acre Secure Campus' },
+    { value: '3', label: 'Boarding Options' },
+  ],
+};
