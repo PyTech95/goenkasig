@@ -1,6 +1,6 @@
 // Mock data — sourced from gdgoenkasignature.com (original images & text)
 
-export const LOGO_URL = '/logo-gdgss.png?v=2';
+export const LOGO_URL = '/logo-gdgss.png?v=3';
 export const ORIG = 'https://www.gdgoenkasignature.com/images';
 
 export const navLinks = [
