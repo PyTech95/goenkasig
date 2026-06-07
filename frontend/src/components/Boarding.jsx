@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Check, ShieldCheck, Heart, Moon, Utensils } from "lucide-react";
 import { boardingHome } from "../mock";
 import Reveal from "./Reveal";
+import CountUp from "./CountUp";
 
 export default function Boarding({ onEnquire }) {
   const [active, setActive] = useState(0);
@@ -116,7 +117,7 @@ export default function Boarding({ onEnquire }) {
           {boardingHome.stats.map((s, i) => (
             <Reveal key={s.label} delay={i * 100}>
               <div className="flex flex-col items-center text-center">
-                <div className="stat-number">{s.value}</div>
+                <div className="stat-number"><CountUp value={s.value} /></div>
                 <span className="gold-divider-thin my-3" />
                 <div className="text-[11px] md:text-[12px] tracking-[0.22em] uppercase text-[var(--gold-light)]">{s.label}</div>
               </div>

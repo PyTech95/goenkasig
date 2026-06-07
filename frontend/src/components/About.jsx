@@ -1,6 +1,7 @@
 import { stats, whyUs, aboutCopy } from "../mock";
 import { Check } from "lucide-react";
 import Reveal from "./Reveal";
+import CountUp from "./CountUp";
 
 export default function About() {
   return (
@@ -34,7 +35,7 @@ export default function About() {
         {stats.map((s, i) => (
           <Reveal key={s.label} delay={i * 100}>
             <div className="flex flex-col items-center text-center">
-              <div className="stat-number">{s.value}</div>
+              <div className="stat-number"><CountUp value={s.value} /></div>
               <span className="gold-divider-thin my-3" />
               <div className="text-[11px] md:text-[12px] tracking-[0.22em] uppercase text-[var(--muted)] max-w-[180px]">{s.label}</div>
             </div>

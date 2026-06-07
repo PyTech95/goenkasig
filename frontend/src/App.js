@@ -14,7 +14,6 @@ import EventsSection from "./components/EventsSection";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
 import EnquiryDialog from "./components/EnquiryDialog";
-import TopBar from "./components/TopBar";
 import WhatsAppButton from "./components/WhatsAppButton";
 import AIAssistant from "./components/AIAssistant";
 import { Toaster } from "./components/ui/sonner";
@@ -27,7 +26,6 @@ const Home = () => {
 
   return (
     <div className="bg-white">
-      <TopBar onEnquire={openEnquire} />
       <Header onEnquire={openEnquire} />
       <main>
         <Hero onEnquire={openEnquire} />
