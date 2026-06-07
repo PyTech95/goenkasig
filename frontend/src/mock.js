@@ -239,7 +239,7 @@ export const aboutCopy = {
     'Parents, visitors and the community claim it to be way ahead of most schools in India, including most international schools. This is largely due to its advanced Real World Curriculum\u2122, the premium infrastructure to support the curriculum and well\u2011trained mentors who are currently working with students to deliver excellent results.',
     'The school provides a safe and spacious learning environment where students are empowered to nurture their love of learning and thrive on challenges. We cultivate the values of mutual respect, personal responsibility, equality and compassion.',
   ],
-  image: 'https://customer-assets.emergentagent.com/job_goenkasig-new/artifacts/s89pp00g_5142778f-491f-493d-8add-7423cd54c7f6.png',
+  image: 'https://customer-assets.emergentagent.com/job_goenkasig-new/artifacts/zru1r8e7_455.jpg',
 };
 
 // ---- Junior School ----
