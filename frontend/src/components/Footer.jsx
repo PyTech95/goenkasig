@@ -8,9 +8,7 @@ export default function Footer({ onEnquire }) {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-5">
             <div className="flex flex-col items-start">
-              <span className="bg-white rounded-lg px-4 py-2.5 shadow-md inline-block mb-3">
-                <img src={LOGO_URL} alt="GD Goenka Signature" className="h-12 md:h-14 w-auto" />
-              </span>
+              <img src={LOGO_URL} alt="GD Goenka Signature" className="h-14 md:h-16 w-auto mb-3" />
             </div>
             <p className="serif-italic text-white/70 text-[18px] mt-6 max-w-[420px] leading-[1.6]">
               "A school where students are inspired to achieve."

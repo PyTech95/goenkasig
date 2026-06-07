@@ -25,9 +25,7 @@ export default function Header({ onEnquire }) {
 
           {/* center: logo */}
           <a href="#home" className="flex flex-col items-center group">
-            <span className="bg-white rounded-lg px-3 py-1.5 md:px-4 md:py-2 shadow-md transition-transform duration-500 group-hover:scale-105">
-              <img src={LOGO_URL} alt="GD Goenka Signature" className="h-9 md:h-12 w-auto" />
-            </span>
+            <img src={LOGO_URL} alt="GD Goenka Signature" className="h-12 md:h-16 w-auto transition-transform duration-500 group-hover:scale-105" />
           </a>
 
           {/* right: menu */}
@@ -45,9 +43,7 @@ export default function Header({ onEnquire }) {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-5 flex items-center justify-between">
           <button onClick={() => { setMobileOpen(false); onEnquire(); }} className="enquire-pill">Enquire</button>
           <div className="flex flex-col items-center">
-            <span className="bg-white rounded-lg px-3 py-1.5 shadow-md">
-              <img src={LOGO_URL} alt="GD Goenka Signature" className="h-9 w-auto" />
-            </span>
+            <img src={LOGO_URL} alt="GD Goenka Signature" className="h-12 w-auto" />
           </div>
           <button onClick={() => setMobileOpen(false)} className="text-[var(--gold)] hover:text-white transition-colors" aria-label="Close menu">
             <X size={28} strokeWidth={1.4} />
