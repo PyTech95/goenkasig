@@ -3,7 +3,7 @@ import { Play } from "lucide-react";
 import { heroSlides } from "../mock";
 import VideoModal from "./VideoModal";
 
-const HERO_VIDEO_URL = "https://www.gdgoenkasignature.com/video/gdg-signature.mp4";
+const HERO_VIDEO_URL = "https://customer-assets.emergentagent.com/job_goenkasig-new/artifacts/35b17ugl_25yrs-of-excellence-gd-goenka-group.mp4";
 
 export default function Hero() {
   const [active, setActive] = useState(0);
